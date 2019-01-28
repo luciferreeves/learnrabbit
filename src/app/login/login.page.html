@@ -1,0 +1,23 @@
+<ion-content padding>
+  <img class="logo" src="../../assets/images/logo.png">
+  <p class="logo-description">Login to your Learnrabbit account</p>
+  <ion-item>
+    <ion-label position="floating">Email address</ion-label>
+    <ion-input type="email" required id="loginEmail" autocomplete="off"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Password</ion-label>
+    <ion-input type="password" required id="loginPassword" autocomplete="off"></ion-input>
+  </ion-item>
+  <ion-button (click)="doLogin()" color="dark" id="loginButton" expand="block" fill="solid">
+    Login
+    <ion-icon slot="end" name="arrow-forward"></ion-icon>
+  </ion-button>
+  <ion-button color="primary" id="registerButton" expand="block" fill="solid">
+    Register
+    <ion-icon slot="end" name="arrow-forward"></ion-icon>
+  </ion-button>
+  <ion-text color="primary">
+      <p id="registerToggle" class="regLink">Create a free account</p>
+    </ion-text>
+</ion-content>
