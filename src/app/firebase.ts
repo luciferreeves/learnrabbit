@@ -2,12 +2,12 @@ import * as firebase from 'firebase/app';
 import 'firebase/auth';
 
 const config = {
-    apiKey: 'AIzaSyCDpK94n-sjvv6SFibzdqiLX-ku2MdBGjE',
-    authDomain: 'learnrabbit-99f01.firebaseapp.com',
-    databaseURL: 'https://learnrabbit-99f01.firebaseio.com',
-    projectId: 'learnrabbit-99f01',
-    storageBucket: 'learnrabbit-99f01.appspot.com',
-    messagingSenderId: '771305273989'
+    apiKey: 'MYAPIKEY',
+    authDomain: 'AUTHDOMAIN.firebaseapp.com',
+    databaseURL: 'https://DATABASEURL.firebaseio.com',
+    projectId: 'PROJECTID',
+    storageBucket: 'STORGAE BUCKET',
+    messagingSenderId: 'MESSAGING SENDER ID'
   };
 
 if (!firebase.apps.length) {
