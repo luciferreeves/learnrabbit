@@ -12,7 +12,7 @@ Online Learning App made on Ionic for iOS and Android.
 
 
 
-## Roadmanp
+## Roadmap
 
 - [x] App Login/Logout Funtionality
 - [ ] App Registration Funtionality
