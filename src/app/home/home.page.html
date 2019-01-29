@@ -1,16 +1,47 @@
 <ion-header>
   <ion-toolbar>
-    
-    <ion-buttons slot="end">
+    <!-- <ion-buttons slot="end">
         <ion-icon (click)="presenLogoutOptions()" class="lgsize" name="information-circle"></ion-icon>
-    </ion-buttons>
-    <ion-searchbar animated placeholder="Find Courses"></ion-searchbar>
+    </ion-buttons> -->
+    <ion-searchbar mode="ios" animated placeholder="Find Courses"></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  No Courses to display
-  <!-- <ion-button href="/login">
-    Home
-  </ion-button> -->
+
+  <div class="contentFlow" id="home-content">
+    <h1>Home</h1>
+    v0.0.2
+  </div>
+  <div class="contentFlow" id="course-content">
+    <h1>Courses</h1>
+  </div>
+  <div class="contentFlow" id="profile-conten">
+    <h1>Profile</h1>
+    <ion-button class="zi" (click)="Logout()" color="dark" expand="block" fill="solid">
+      Logout
+      <ion-icon slot="end" name="arrow-forward"></ion-icon>
+    </ion-button>
+    <!-- <button ion-button (click)="logoutclicked()">Click</button> -->
+  </div>
+
 </ion-content>
+<!-- 
+<ion-tabs> -->
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button (click)="showHome()">
+      <ion-icon name="home" id="homeBtn"></ion-icon>
+      <ion-label id="hBtn">Home</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button (click)="showCourses()">
+      <ion-icon name="book" id="courseBtn" class="no-active"></ion-icon>
+      <ion-label class="no-active" id="cBtn">My Courses</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button (click)="showProfile()">
+      <ion-icon name="contact" id="profileBtn" class="no-active"></ion-icon>
+      <ion-label class="no-active" id="pbtn">Profile</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+<!-- </ion-tabs> -->

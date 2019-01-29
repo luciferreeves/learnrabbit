@@ -4,7 +4,6 @@ import { LoadingController } from '@ionic/angular';
 import { Router } from '@angular/router';
 import * as firebase from 'firebase/app';
 import 'firebase/auth';
-import '../login/script.js';
 import * as $ from 'jquery';
 import '../firebase';
 
@@ -38,7 +37,7 @@ export class LoginPage implements OnInit {
 
   async emptyAlert() {
     const empty = await this.alertController.create({
-      header: 'Error!',
+      // header: 'Error!',
       message: 'All fields are required. Please fill the details and try again',
       buttons: ['OK']
     });

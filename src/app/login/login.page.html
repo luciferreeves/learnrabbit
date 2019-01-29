@@ -1,5 +1,19 @@
-<ion-content padding>
-  <img class="logo" src="../../assets/images/logo.png">
+<link rel="stylesheet" type="text/css" href="../../assets/dist/semantic.min.css">
+<script src="../../assets/dist/semantic.min.js"></script>
+<ion-content>
+  <div class="full-width">
+    <div class="container-login">
+      <h1 class="title">Sign In</h1>
+      <label for="email" class="inputLabel">Email</label>
+      <input class="inputField" type="email" id="loginEmail" name="email" placeholder="Email address" autocomplete="off">
+      <label for="password" class="inputLabel">Password</label>
+      <input class="inputField" type="password" id="loginPassword" name="password" placeholder="Password" autocomplete="off">
+      <a id="registerButton" class="btn-left">Register</a>
+      <a (click)="doLogin()" id="loginButton" class="btn-right">Login</a>
+    </div>
+  </div>
+</ion-content>
+<!-- <img class="logo" src="../../assets/images/logo.png">
   <p class="logo-description">Login to your Learnrabbit account</p>
   <ion-item>
     <ion-label position="floating">Email address</ion-label>
@@ -19,5 +33,4 @@
   </ion-button>
   <ion-text color="primary">
       <p id="registerToggle" class="regLink">Create a free account</p>
-    </ion-text>
-</ion-content>
+    </ion-text> -->

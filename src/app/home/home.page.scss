@@ -1,3 +1,22 @@
 .lgsize {
     font-size: 1.5em;
 }
+.no-active {
+    color: #666666 !important;
+}
+.active {
+    color: red;
+}
+.contentFlow {
+    height: calc(100vh - 150px);
+    overflow-y: scroll !important;
+}
+#course-content {
+    display: none;
+}
+#profile-content {
+    display: none;
+}
+.zi {
+    z-index: 99;
+}

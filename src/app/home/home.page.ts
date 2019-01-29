@@ -15,24 +15,63 @@ export class HomePage {
 
   constructor(public alertController: AlertController, private router: Router) { }
 
-  async presenLogoutOptions() {
-    const logoutOptions = await this.alertController.create({
-      header: 'Learnrabbit v0.0.1',
-      message: '© 2019, Learnrabbit Education. <br> <small>An app by Kumar Priyansh.</small>',
+  async presentAlertLogoutConfirm() {
+    const alertLogout = await this.alertController.create({
+      header: 'Confirm Logout?',
       buttons: [
         {
-          text: 'Logout',
-          handler: () => {
-            this.Logout();
+          text: 'Cancel',
+          role: 'cancel',
+          cssClass: 'secondary',
+          handler: (blah) => {
+            console.log('Confirm Cancel: blah');
           }
         }, {
-          text: 'Dismiss',
-          role: 'cancel'
+          text: 'Okay',
+          handler: () => {
+            console.log('Confirm Okay');
+          }
         }
       ]
     });
 
-    await logoutOptions.present();
+    await alertLogout.present();
+  }
+
+  showHome() {
+    $('#home-content').show();
+    $('#course-content').hide();
+    $('#profile-content').hide();
+    $('#homeBtn').removeClass('no-active');
+    $('#hBtn').removeClass('no-active');
+    $('#courseBtn').addClass('no-active');
+    $('#cBtn').addClass('no-active');
+    $('#profileBtn').addClass('no-active');
+    $('#pBtn').addClass('no-active');
+  }
+
+  showCourses() {
+    $('#home-content').hide();
+    $('#course-content').show();
+    $('#profile-content').hide();
+    $('#homeBtn').addClass('no-active');
+    $('#hBtn').addClass('no-active');
+    $('#courseBtn').removeClass('no-active');
+    $('#cBtn').removeClass('no-active');
+    $('#profileBtn').addClass('no-active');
+    $('#pBtn').addClass('no-active');
+  }
+
+  showProfile() {
+    $('#home-content').hide();
+    $('#course-content').hide();
+    $('#profile-content').show();
+    $('#homeBtn').addClass('no-active');
+    $('#hBtn').addClass('no-active');
+    $('#courseBtn').addClass('no-active');
+    $('#cBtn').addClass('no-active');
+    $('#profileBtn').removeClass('no-active');
+    $('#pBtn').removeClass('no-active');
   }
 
   Logout() {
