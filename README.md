@@ -1,16 +1,18 @@
-# Learnrabbit  v 0.0.1
+# Learnrabbit  v 0.0.2
 
 Online Learning App made on Ionic for iOS and Android.
 
 ![5c4ec9d6889af](https://i.loli.net/2019/01/28/5c4ec9d6889af.png)
 
-## App Screenshots :: Android
+## App Screenshots
 
-| ![5c4eca523f81f](https://i.loli.net/2019/01/28/5c4eca523f81f.jpeg) | ![5c4eca6192210](https://i.loli.net/2019/01/28/5c4eca6192210.jpeg) | ![5c4eca6e06185](https://i.loli.net/2019/01/28/5c4eca6e06185.jpeg) |
-| ------------------------------------------------------------------ | ------------------------------------------------------------------ | ------------------------------------------------------------------ |
-|                                                                    |                                                                    |                                                                    |
+| ![5c4fff8621f1b](https://i.loli.net/2019/01/29/5c4fff8621f1b.png) | ![5c4fffa22de54](https://i.loli.net/2019/01/29/5c4fffa22de54.png) | ![5c4fffb54bbb1](https://i.loli.net/2019/01/29/5c4fffb54bbb1.png) |
+| ----------------------------------------------------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------- |
+|                                                                   |                                                                   |                                                                   |
 
-## Roadmap
+
+
+## Roadmanp
 
 - [x] App Login/Logout Funtionality
 - [ ] App Registration Funtionality
